@@ -8,9 +8,9 @@ CORS(app)
 
 
 servers = [
-    "http://127.0.0.1:5001",
-    "http://127.0.0.1:5002",
-    "http://127.0.0.1:5003"
+   "https://load-balancer-server-1.onrender.com",
+    "https://load-balancer-server-2.onrender.com",
+    "https://load-balancer-server-3.onrender.com"
 ]
 
 current = 0
