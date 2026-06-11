@@ -4,7 +4,8 @@ from flask_cors import CORS
 import os 
 
 app = Flask(__name__)
-CORS(app)  # 2. Enable CORS for all routes
+CORS(app)  
+
 
 servers = [
     "http://127.0.0.1:5001",
@@ -26,12 +27,8 @@ def balance():
     except:
         return {
             "error": "Server Down",
-            "attempted_server": server # Helpful hint for the dashboard UI
+            "attempted_server": server 
         }
-
-if __name__ == '__main__':
-    app.run(port=8080)
-
 
 
 if __name__ == '__main__':
